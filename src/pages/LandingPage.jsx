@@ -13,7 +13,7 @@ const TC = {
   pure:    '#50fa7b',
 }
 
-const DOWNLOAD_URL = 'https://raw.githubusercontent.com/greatfugue/Tuning-System-Analyser/main/COF.py'
+const DOWNLOAD_URL = 'https://github.com/greatfugue/Tuning-System-Analyser/blob/main/COF.py'
 const GITHUB_URL    = 'https://github.com/greatfugue/Tuning-System-Analyser'
 const FORMSPREE_URL = 'https://formspree.io/f/xykvvnkv'
 
@@ -225,7 +225,7 @@ export default function LandingPage() {
           }}>
             Launch App
           </Link>
-          <a href={DOWNLOAD_URL} download style={{
+          <a href={DOWNLOAD_URL} target="_blank" rel="noreferrer" style={{
             background: TC.card,
             color: TC.fg,
             textDecoration: 'none',
@@ -288,10 +288,10 @@ export default function LandingPage() {
         <BodyText style={{ color: TC.fg_dim, fontSize: '14px' }}>Requirements: Python 3.8 or later</BodyText>
         <CodeBlock>pip install customtkinter matplotlib numpy</CodeBlock>
         <BodyText style={{ color: TC.fg_dim, fontSize: '14px', marginTop: '8px' }}>Then run:</BodyText>
-        <CodeBlock>python3 COPNew.py</CodeBlock>
+        <CodeBlock>python3 COF.py</CodeBlock>
         <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-          <a href={DOWNLOAD_URL} download style={{ color: TC.accent, fontFamily: 'Helvetica, sans-serif', fontSize: '14px' }}>
-            Download COPNew.py
+          <a href={DOWNLOAD_URL} target="_blank" rel="noreferrer" style={{ color: TC.accent, fontFamily: 'Helvetica, sans-serif', fontSize: '14px' }}>
+            Download COFNew.py
           </a>
           <a href={GITHUB_URL} target="_blank" rel="noreferrer" style={{ color: TC.accent, fontFamily: 'Helvetica, sans-serif', fontSize: '14px' }}>
             View source on GitHub
