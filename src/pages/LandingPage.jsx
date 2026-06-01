@@ -13,8 +13,8 @@ const TC = {
   pure:    '#50fa7b',
 }
 
-const DOWNLOAD_URL  = 'PASTE_DIRECT_DOWNLOAD_URL_HERE'
-const GITHUB_URL    = 'PASTE_GITHUB_REPO_URL_HERE'
+const DOWNLOAD_URL = 'https://raw.githubusercontent.com/greatfugue/Tuning-System-Analyser/main/COF.py'
+const GITHUB_URL    = 'https://github.com/greatfugue/Tuning-System-Analyser'
 const FORMSPREE_URL = 'https://formspree.io/f/xykvvnkv'
 
 function Section({ children, style }) {
