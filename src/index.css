@@ -1,0 +1,72 @@
+/* ── Reset ───────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Theme variables (matching Python get_theme_colors()) ── */
+:root {
+  --bg:      #1e1e2e;
+  --panel:   #2a2a3e;
+  --card:    #313145;
+  --fg:      #e0e0f0;
+  --fg-dim:  #888899;
+  --accent:  #5e9bff;
+  --accent2: #a78bfa;
+  --sep:     #3a3a50;
+  --rough:   #ff5555;
+  --pure:    #50fa7b;
+  --mono:    'Courier New', monospace;
+  --sans:    Helvetica, Arial, sans-serif;
+}
+
+/* ── Base ────────────────────────────────────────────────── */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--sans);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Scrollbar styling ───────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sep);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fg-dim);
+}
+
+/* ── Utility classes ─────────────────────────────────────── */
+.sep {
+  height: 1px;
+  background: var(--sep);
+  margin: 8px 16px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--sans);
+}
+
+input {
+  outline: none;
+  border: none;
+  font-family: var(--mono);
+}
